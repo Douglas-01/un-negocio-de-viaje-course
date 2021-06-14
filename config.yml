@@ -1,0 +1,17 @@
+title: Un negocio de viaje
+description: >-
+  https://es.wix.com/website/builder?storyId=508b5e5c-ffb4-4f20-9aa9-a2cf4225795d&referral=split%20page&editorSessionId=65e607dd-8c66-416e-9764-e752c60452da#/
+template:
+  repo: un-negocio-de-viaje-template
+  name: un-negocio-de-viaje
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
